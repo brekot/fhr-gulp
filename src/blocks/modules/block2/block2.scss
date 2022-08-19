@@ -1,0 +1,19 @@
+.block2 {
+    border-top: 4px solid $color-red;
+    position: relative;
+    padding: 110px 0 165px;
+
+    &__img {
+        position: absolute;
+        top: -111px;
+        left: 50%;
+        margin: 0 0 0 -100px;
+    }
+    &__text {
+        letter-spacing: .03em;
+        text-align: center;
+        font-size: 21px;
+        text-transform: uppercase;
+        line-height: 1.9;
+    }
+}

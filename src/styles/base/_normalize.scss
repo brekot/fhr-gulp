@@ -16,10 +16,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 	margin: 0;
-	font: 400 18px/29px 'Open Sans', sans-serif;
+	font: 400 18px/1.6 'Open Sans', sans-serif;
 	color: $color-white;
 	text-align: left;
 	background-color: $color-black;
+
+	background-image: url(../img/tmp.png);
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 .bebas-neue {

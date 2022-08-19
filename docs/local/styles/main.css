@@ -107,10 +107,13 @@ section {
 
 body {
   margin: 0;
-  font: 400 18px/29px "Open Sans", sans-serif;
+  font: 400 18px/1.6 "Open Sans", sans-serif;
   color: #EDEDED;
   text-align: left;
   background-color: #262626;
+  background-image: url(../img/tmp.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .bebas-neue {
@@ -245,6 +248,84 @@ input[type=checkbox] {
 textarea {
   overflow: auto;
   resize: vertical;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  z-index: 50;
+}
+
+.block1 {
+  position: relative;
+  height: 1485px;
+}
+
+.block1__img1 {
+  position: absolute;
+  top: 103px;
+  left: 0;
+  z-index: 1;
+}
+
+.block1__img2 {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  z-index: 2;
+}
+
+.block1__img3 {
+  position: absolute;
+  left: 97px;
+  top: 141px;
+  z-index: 5;
+}
+
+.block1__img4 {
+  position: absolute;
+  right: 0;
+  top: 141px;
+  z-index: 3;
+}
+
+.block1__logo {
+  position: absolute;
+  top: 129px;
+  left: 50%;
+  margin: 0 0 0 -266px;
+  z-index: 4;
+}
+
+.block1__text {
+  position: absolute;
+  top: 793px;
+  left: 50%;
+  margin: 0 0 0 -498px;
+  z-index: 6;
+}
+
+.block2 {
+  border-top: 4px solid #D73B3B;
+  position: relative;
+  padding: 110px 0 165px;
+}
+
+.block2__img {
+  position: absolute;
+  top: -111px;
+  left: 50%;
+  margin: 0 0 0 -100px;
+}
+
+.block2__text {
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  line-height: 1.9;
 }
 
 /* 
@@ -445,9 +526,9 @@ textarea {
         .position-lg-relative { position: relative !important; }*/
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 
   /*
@@ -524,7 +605,7 @@ textarea {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1439.98px) {
   .container {
     max-width: 960px;
   }

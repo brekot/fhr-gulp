@@ -1,0 +1,43 @@
+.block1 {
+    position: relative;
+    height: 1485px;
+
+    &__img1 {
+        position: absolute;
+        top: 103px;
+        left: 0;
+        z-index: 1;
+    }
+    &__img2 {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        z-index: 2;
+    }
+    &__img3 {
+        position: absolute;
+        left: 97px;
+        top: 141px;
+        z-index: 5;
+    }
+    &__img4 {
+        position: absolute;
+        right: 0;
+        top: 141px;
+        z-index: 3;
+    }
+    &__logo {
+        position: absolute;
+        top: 129px;
+        left: 50%;
+        margin: 0 0 0 -266px;
+        z-index: 4;
+    }
+    &__text {
+        position: absolute;
+        top: 793px;
+        left: 50%;
+        margin: 0 0 0 -498px;
+        z-index: 6;
+    }
+}
