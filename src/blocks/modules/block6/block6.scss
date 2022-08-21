@@ -88,4 +88,116 @@
         right: 0;
         top: 400px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 0 0 235px;
+
+            &__date {
+                top: -262px;
+                left: 34px;
+            }
+            &__img {
+                margin: 0 0 0 -580px;
+                height: 290px;
+            }
+            &__text {
+                padding: 0 0 0 366px;
+                top: -88px;
+            }
+            &__video {
+                top: 520px;
+                margin: 0 -200px 0 0;
+            }
+            &__score {
+                right: 12px;
+                top: 523px;
+            }
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__img {
+            margin: 0 0 0 -255px;
+        }
+        &__text {
+            padding: 370px 0 0;
+            top: 0;
+        }
+        &__video {
+            top: auto;
+            bottom: -210px;
+            margin: 0;
+            right: auto;
+            left: 0;
+        }
+        &__score {
+            top: auto;
+            bottom: -150px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 0 0 260px;
+
+            &__date {
+                top: 27px;
+                left: 17px;
+                z-index: 2;
+
+                &-title {
+                    font-size: 25px;
+                    letter-spacing: 0.4em;
+                    line-height: 1;
+                }
+                &-num {
+                    font-size: 30px;
+                    height: 109px;
+                    width: 109px;
+                    top: 30px;
+                    left: -6px;
+                }
+                &-mounth {
+                    font-size: 29px;
+                    letter-spacing: 0.06em;
+                    top: 64px;
+                    left: 111px;
+                }
+            }
+            &__img {
+                top: 148px;
+                margin: 0 0 0 -280px;
+                max-width: 560px;
+                height: 390px;
+            }
+            &__text {
+                padding: 578px 15px 0;
+                top: 0;
+            }
+            &__title {
+                font-size: 32px;
+                line-height: 1;
+                margin: 0 0 10px;
+            }
+            &__video {
+                top: auto;
+                bottom: -183px;
+                right: auto;
+                left: 15px;
+                margin: 0;
+ 
+                &-img {
+                    width: 210px;
+                }
+            }
+            &__score {
+                top: auto;
+                bottom: -102px;
+                height: 80px;
+                right: 35px;
+            }
+        }
+    }
 }

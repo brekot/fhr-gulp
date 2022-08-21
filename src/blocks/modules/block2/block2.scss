@@ -16,4 +16,46 @@
         text-transform: uppercase;
         line-height: 1.9;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 110px 0 175px;
+
+            &__img { 
+                margin: 0 0 0 -85px;
+                top: -95px;
+                width: 170px;
+            }
+            &__text {
+                max-width: 850px;
+                margin: auto;
+            }
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__img {
+            width: 160px;
+            top: -90px;
+            margin: 0 0 0 -80px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 102px 0 114px;
+
+            &__img {
+                top: -94px;
+                width: 164px;
+                margin: 0 0 0 -82px;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 29px;
+                padding: 0 15px;
+            }
+        }
+    }
 }

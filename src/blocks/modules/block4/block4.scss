@@ -4,7 +4,7 @@
         position: relative;
     }
     &__text {
-        padding: 60px 0 160px 0;
+        padding: 60px 0 160px;
         max-width: 720px;
         letter-spacing: .01em;
         position: relative;
@@ -15,5 +15,39 @@
         right: 10px;
         top: 40px;
         z-index: 1;
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__text {
+            padding: 45px 0 105px 36px;
+            max-width: 575px;
+        }
+        &__img {
+            height: 196px;
+            right: 58px;
+            top: 36px;
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__text {
+            padding: 185px 0 50px;
+        }
+        &__img {
+            right: 0;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__text {
+            padding: 123px 15px 80px;
+        }
+        &__img {
+            right: 50%;
+            top: 43px;
+            width: 300px;
+            margin: 0 -150px 0 0;
+        }
     }
 }

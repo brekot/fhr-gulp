@@ -4,4 +4,12 @@
     right: 0;
     top: 30px;
     z-index: 50;
+
+    @include media-breakpoint-only(xs)
+    {
+        &__logo {
+            height: 49px;
+            margin: 0 0 0 15px;
+        }
+    }
 }

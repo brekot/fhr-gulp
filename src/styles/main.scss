@@ -1,4 +1,3 @@
-//@import "../../node_modules/swiper/swiper";
 @import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
 
 // Переменные, миксины, функции
@@ -20,12 +19,3 @@
 
 // БЭМ-блоки
 @import "../blocks/modules";
-
-/* 
-@include media-breakpoint-only(lg)
-{
-    & {
-
-    }
-}
-*/

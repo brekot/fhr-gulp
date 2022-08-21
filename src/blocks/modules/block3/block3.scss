@@ -28,4 +28,34 @@
         color: $color-black;
         padding: 40px 140px 35px 300px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__text {
+            padding: 43px 45px 32px 256px;
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__text {
+            padding: 100px 0 50px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__inner {
+            margin: 0 15px;
+        }
+        &__word {
+            font-size: 25px;
+            top: -50px;
+        }
+        &__year {
+            font-size: 66px;
+            top: -13px;
+        }
+        &__text {
+            padding: 93px 0 40px;
+        }
+    }
 }

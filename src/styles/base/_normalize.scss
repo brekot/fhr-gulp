@@ -26,6 +26,14 @@ body {
 	background-position: top center; */
 }
 
+@include media-breakpoint-only(xs)
+{
+	body {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+}
+
 .bebas-neue {
 	font-family: 'Bebas Neue';
 	font-weight: 700;
@@ -151,4 +159,9 @@ input[type="checkbox"] {
 textarea {
 	overflow: auto;
 	resize: vertical;
+}
+
+.work-block {
+	width: 100%;
+	overflow-x: hidden;
 }
