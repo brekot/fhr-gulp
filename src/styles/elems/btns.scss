@@ -1,0 +1,21 @@
+.btn {
+    height: 50px;
+    padding: 0 25px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    transition: .5s;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &-blue {
+        background-color: $color-blue;
+    }
+
+    &__icon {
+        margin: 0 10px 0 0;
+    }
+}

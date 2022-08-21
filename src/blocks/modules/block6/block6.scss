@@ -1,0 +1,91 @@
+.block6 {
+    padding: 0 0 255px;
+
+    &__inner {
+        position: relative;
+        z-index: 5;
+    }
+    &__date {
+        position: absolute;
+        top: -245px;
+
+        &-title {
+            font-size: 33px;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: $color-yellow;
+            max-width: 245px;
+            line-height: 37px;
+        }
+        &-num {
+            -webkit-text-stroke: 1px $color-yellow;
+            text-stroke: 1px $color-yellow;
+
+            font-weight: 700;
+            font-size: 70px;
+            color: $color-transparent;
+            height: 214px;
+            width: 214px;
+            border: 1px solid $color-yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            left: -8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-mounth {
+            -webkit-text-stroke: 1px $color-yellow;
+            text-stroke: 1px $color-yellow;
+
+            font-weight: 700;
+            font-size: 54px;
+            letter-spacing: .02em;
+            text-transform: uppercase;
+            color: $color-transparent;
+            position: absolute;
+            top: 57px;
+            left: 217px;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin: 0 0 0 -720px;
+    }
+    &__text {
+        padding: 0 0 0 450px;
+        position: relative;
+        top: -88px;
+        letter-spacing: .01em;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 47px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: $color-yellow;
+    }
+    &__video {
+        position: absolute;
+        top: 405px;
+        right: 50%;
+        margin: 0 -160px 0 0;
+
+        &-img {
+            display: block;
+        }
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            right: -100px;
+        }
+    }
+    &__score {
+        position: absolute;
+        right: 0;
+        top: 400px;
+    }
+}

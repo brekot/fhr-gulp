@@ -1,0 +1,44 @@
+.block5 {
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 380px;
+        background: linear-gradient(180deg, $color-transparent 0%, $color-black 100%);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    &__bg {
+        background-image: url(../img/block5/bg.png);
+        height: 1023px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: soft-light;
+        position: relative;
+        z-index: 1;
+    }
+    &__glob {
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 -585px;
+        z-index: 4;
+        top: 116px;
+    }
+    &__img1 {
+        position: absolute;
+        right: 50%;
+        top: 315px;
+        margin: 0 -370px 0 0;
+        z-index: 3;
+    }
+    &__img2 {
+        position: absolute;
+        top: 432px;
+        right: 50%;
+        margin: 0 -617px 0 0;
+        z-index: 4;
+    }
+}

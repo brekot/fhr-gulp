@@ -1,0 +1,31 @@
+.block3 {
+    background-color: $color-white;
+
+    &__inner {
+        position: relative;
+    }
+    &__word {
+        font-weight: 400;
+        font-size: 33px;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: -60px;
+    }
+    &__year {
+        font-weight: 700;
+        font-size: 90px;
+        letter-spacing: -.03em;
+        color: $color-black;
+        position: absolute;
+        left: 0;
+        top: -16px;
+        line-height: 1;
+    }
+    &__text {
+        letter-spacing: .01em;
+        color: $color-black;
+        padding: 40px 140px 35px 300px;
+    }
+}

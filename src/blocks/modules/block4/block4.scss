@@ -1,0 +1,19 @@
+.block4 {
+
+    &__inner {
+        position: relative;
+    }
+    &__text {
+        padding: 60px 0 160px 0;
+        max-width: 720px;
+        letter-spacing: .01em;
+        position: relative;
+        z-index: 2;
+    }
+    &__img {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        z-index: 1;
+    }
+}
