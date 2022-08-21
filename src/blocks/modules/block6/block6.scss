@@ -8,46 +8,6 @@
     &__date {
         position: absolute;
         top: -245px;
-
-        &-title {
-            font-size: 33px;
-            letter-spacing: .3em;
-            text-transform: uppercase;
-            color: $color-yellow;
-            max-width: 245px;
-            line-height: 37px;
-        }
-        &-num {
-            -webkit-text-stroke: 1px $color-yellow;
-            text-stroke: 1px $color-yellow;
-
-            font-weight: 700;
-            font-size: 70px;
-            color: $color-transparent;
-            height: 214px;
-            width: 214px;
-            border: 1px solid $color-yellow;
-            border-radius: 50%;
-            position: absolute;
-            top: -5px;
-            left: -8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        &-mounth {
-            -webkit-text-stroke: 1px $color-yellow;
-            text-stroke: 1px $color-yellow;
-
-            font-weight: 700;
-            font-size: 54px;
-            letter-spacing: .02em;
-            text-transform: uppercase;
-            color: $color-transparent;
-            position: absolute;
-            top: 57px;
-            left: 217px;
-        }
     }
     &__img {
         position: absolute;
@@ -146,25 +106,6 @@
                 top: 27px;
                 left: 17px;
                 z-index: 2;
-
-                &-title {
-                    font-size: 25px;
-                    letter-spacing: 0.4em;
-                    line-height: 1;
-                }
-                &-num {
-                    font-size: 30px;
-                    height: 109px;
-                    width: 109px;
-                    top: 30px;
-                    left: -6px;
-                }
-                &-mounth {
-                    font-size: 29px;
-                    letter-spacing: 0.06em;
-                    top: 64px;
-                    left: 111px;
-                }
             }
             &__img {
                 top: 148px;

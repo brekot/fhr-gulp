@@ -1,0 +1,118 @@
+.block7 {
+    background: url(../img/block7/bg.png) no-repeat center / cover;
+
+    &__inner {
+        position: relative;
+        padding: 105px 0 135px;
+    }
+    &__text {
+        padding: 88px 0 40px;
+        max-width: 715px;
+        letter-spacing: .01em;
+    }
+    &__title {
+        font-size: 47px;
+        letter-spacing: .05em;
+    }
+    &__img1 {
+        position: absolute;
+        right: 20px;
+        top: 260px;
+    }
+    &__img2 {
+        position: absolute;
+        right: 80px;
+        bottom: -95px;
+    }
+    &__score {
+        position: absolute;
+        right: 50%;
+        margin: 0 -140px 0 0;
+        bottom: 60px;
+    }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__inner {
+            padding: 93px 35px 135px;
+        }
+        &__text {
+            padding: 84px 0 40px;
+            max-width: 523px;
+        }
+        &__img1 {
+            right: 35px;
+            top: 320px;
+            width: 316px;
+        }
+        &__img2 {
+            right: 85px;
+            bottom: -70px;
+            width: 214px;
+        }
+        &__score {
+            margin: 0 -105px 0 0;
+            bottom: 65px;
+        }
+    }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            margin: 0 0 370px;
+
+            &__img1 {
+                top: auto;
+                bottom: -300px;
+                right: 50%;
+                margin: 0 -250px 0 0;
+            }
+            &__img2 {
+                right: 50%;
+                bottom: -395px;
+            }
+            &__score {
+                right: 0;
+                margin: 0;
+                bottom: 100px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            height: 375px;
+            margin: 0 0 820px;
+
+            &__inner {
+                padding: 250px 15px 0;
+            }
+            &__text {
+                padding: 110px 0 265px;
+            }
+            &__title {
+                font-size: 32px;
+                letter-spacing: 0.04em;
+                line-height: 1;
+                max-width: 200px;
+                margin: 0 0 11px;
+            }
+            &__img1 {
+                width: 195px;
+                top: auto;
+                bottom: 100px;
+                right: 35px;
+            }
+            &__img2 {
+                width: 140px;
+                bottom: 70px;
+                right: 182px;
+            }
+            &__score {
+                right: 30px;
+                margin: 0;
+                bottom: -30px;
+                width: 80px;
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
     height: 50px;
     padding: 0 25px;
     white-space: nowrap;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: $color-white;
     transition: .5s;
@@ -13,6 +13,10 @@
 
     &-blue {
         background-color: $color-blue;
+    }
+
+    &-white {
+        border: 1px solid $color-white;
     }
 
     &__icon {
