@@ -1,0 +1,38 @@
+.block9 {
+    background: url(../img/block9/bg.png) no-repeat top center / cover;
+
+    &__inner {
+        position: relative;
+        padding: 72px 0 0;
+    }
+    &__text {
+        padding: 90px 0 38px;
+        max-width: 704px;
+        letter-spacing: .01em;
+    }
+    &__title {
+        font-size: 47px;
+        letter-spacing: .05em;
+        color: $color-yellow;
+        text-transform: uppercase;
+    }
+    &__video {
+        position: relative;
+        display: inline-block;
+
+        &-img {
+            display: block;
+        }
+        &-btn {
+            position: absolute;
+            top: 0;
+            right: -80px;
+        }
+    }
+    &__score {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        margin: 0 0 0 17px;
+    }
+}

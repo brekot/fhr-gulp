@@ -21,9 +21,9 @@ body {
 	text-align: left;
 	background-color: $color-black;
 
-/* 	background-image: url(../img/tmp.png);
+	background-image: url(../img/tmp.png);
 	background-repeat: no-repeat;
-	background-position: top center; */
+	background-position: top center;
 }
 
 @include media-breakpoint-only(xs)
