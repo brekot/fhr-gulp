@@ -1,0 +1,20 @@
+.block12 {
+    position: relative;
+    height: 760px;
+
+    &:after {
+        content: '';
+        height: 385px;
+        background: linear-gradient(180deg, $color-transparent 0%, $color-black 100%);
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__bg {
+        background: url(../img/block12/bg.png) no-repeat center / cover;
+        height: 100%;
+        mix-blend-mode: screen;
+    }
+}

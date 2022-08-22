@@ -52,6 +52,18 @@
         border: 1px solid $color-white;
     }
 
+    &_black &__title {
+        color: $color-black;
+    }
+    &_black &__num,
+    &_black &__mounth {
+        -webkit-text-stroke: 1px $color-black;
+        text-stroke: 1px $color-black;
+    }
+    &_black &__num {
+        border: 1px solid $color-black;
+    }
+
     @include media-breakpoint-only(xs)
     {
         &__title {
