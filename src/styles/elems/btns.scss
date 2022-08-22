@@ -7,16 +7,29 @@
     color: $color-white;
     transition: .5s;
 
-    &:hover {
-        opacity: .8;
-    }
-
     &-blue {
         background-color: $color-blue;
+
+        &:hover {
+            background-color: $color-blue-hover;
+        }
+    }
+
+    &-red {
+        background-color: $color-red;
+
+        &:hover {
+            background-color: $color-red-hover;
+        }
     }
 
     &-white {
         border: 1px solid $color-white;
+
+        &:hover {
+            background-color: $color-red;
+            border-color: $color-red;
+        }
     }
 
     &__icon {

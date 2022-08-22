@@ -3,7 +3,7 @@
 
     &__inner {
         position: relative;
-        padding: 105px 0 135px;
+        padding: 117px 0 125px;
     }
     &__text {
         padding: 88px 0 40px;
@@ -28,7 +28,7 @@
         position: absolute;
         right: 50%;
         margin: 0 -140px 0 0;
-        bottom: 60px;
+        bottom: 50px;
     }
 
     @include media-breakpoint-only(lg)
