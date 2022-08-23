@@ -1,0 +1,27 @@
+.block15 {
+    background: url(../img/block15/bg.webp) no-repeat center / cover;
+    position: relative;
+    height: 770px;
+
+    .not-use-webp & {
+        background-image: url(../img/block15/bg.png);
+    }
+
+    &:after {
+        content: '';
+        height: 385px;
+        background: linear-gradient(180deg, $color-transparent 0%, $color-black 100%);
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &__img {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin: 0 0 0 -673px;
+        bottom: -57px;
+    }
+}

@@ -1,0 +1,60 @@
+.block16 {
+    background: url(../img/block16/bg.webp) no-repeat calc(50% - 55px) 420px;
+    padding: 0 0 490px;
+
+    .not-use-webp & {
+        background-image: url(../img/block16/bg.png);
+    }
+   
+    &__inner {
+        position: relative;
+        margin: -80px 0 0 452px;
+        z-index: 2;
+    }
+    &__img {
+        max-width: 528px;
+        position: absolute;
+        left: -587px;
+        top: 120px;
+    }
+    &__date {
+        position: absolute;
+        top: -189px;
+        left: -172px;
+
+        &-title {
+            margin: -5px 0 0 172px;
+        }
+    }
+    &__text {
+        color: $color-gray;
+        letter-spacing: .01em;
+        margin: 0 0 52px;
+    }
+    &__title {
+        font-size: 47px;
+        line-height: 1;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: $color-yellow;
+        margin: 0 0 17px;
+    }
+    &__video {
+        position: relative;
+        display: inline-block;
+
+        &-img {
+            display: block;
+        }
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            right: -80px;
+        }
+    }
+    &__score {
+        position: absolute;
+        bottom: 40px;
+        right: 5px;
+    }
+}

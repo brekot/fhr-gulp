@@ -1,0 +1,52 @@
+.block18 {
+    margin: 0 0 50px;
+
+    &__inner {
+        margin: auto;
+        max-width: 868px;
+    }
+    &__title {
+        color: $color-yellow;
+        font-size: 33px;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0 0 23px;
+    }
+    &__bg {
+        background-color: $color-yellow;
+        color: $color-black;
+        padding: 50px 0 20px;
+        letter-spacing: .01em;
+    }
+    &__desc {
+        max-width: 730px;
+        margin: 0 0 40px;
+    }
+    &__items {
+        margin: 0 -150px 0 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        border-top: 3px solid $color-black;
+        padding: 11px 0;
+        justify-content: space-between;
+    }
+    &__year {
+        font-size: 110px;
+        line-height: 1;
+        letter-spacing: 0.04em;
+        height: 91px;
+        padding: 0 0 0 5px;
+    }
+    &__text {
+        width: calc(100% - 223px);
+    }
+    &__last {
+        padding: 45px 0 0;
+        letter-spacing: .01em;
+        max-width: 730px;
+        color: $color-yellow;
+    }
+}
