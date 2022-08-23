@@ -76,6 +76,29 @@
             top: -25px;
         }
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__block {
+            margin: 42px 0 0;
+            padding: 37px 0 24px;
+        }
+        &__title {
+            margin: 5px 0;
+        }
+        &__img {
+            height: 93px;
+        }
+        &__str {
+            height: 90px;
+            width: 90px;
+
+            &:before {
+                right: 41px;
+                top: -20px;
+            }
+        }
+    }
 }
 
 .share-block-links {

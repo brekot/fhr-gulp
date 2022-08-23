@@ -14,4 +14,18 @@
         left: 50%;
         margin: 0 0 0 -530px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            height: 585px;
+            margin: 200px 0 0;
+
+            &__img {
+                top: -89px;
+                margin: 0 0 0 -408px;
+                width: 409px;
+            }
+        }
+    }
 }

@@ -16,4 +16,30 @@
         text-transform: uppercase;
         line-height: 1.9;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 88px 46px 90px;
+
+            &__inner {
+                margin: 16px 45px 0 365px;
+            }
+            &__text {
+                margin: 0 0 35px;
+            }
+            &__date {
+                top: -180px;
+                left: -148px;
+            }
+            &__score {
+                right: -13px;
+            }
+            &__img {
+                left: -440px;
+                top: 120px;
+                height: 332px;
+            }
+        }
+    }
 }

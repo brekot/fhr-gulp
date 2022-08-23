@@ -57,4 +57,32 @@
         bottom: 40px;
         right: 5px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 0 0 407px;
+            background-size: 730px auto;
+            background-position: calc(50% - 55px) 586px;
+
+            &__inner {
+                margin: 16px 45px 0 365px;
+            }
+            &__text {
+                margin: 0 0 35px;
+            }
+            &__date {
+                top: -180px;
+                left: -148px;
+            }
+            &__score {
+                right: -13px;
+            }
+            &__img {
+                left: -440px;
+                top: 120px;
+                height: 332px;
+            }
+        }
+    }
 }

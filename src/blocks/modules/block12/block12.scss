@@ -21,4 +21,11 @@
     .not-use-webp &__bg {
         background-image: url(../img/block12/bg.png);
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            height: 570px;
+        }
+    }
 }

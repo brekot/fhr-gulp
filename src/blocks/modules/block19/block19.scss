@@ -58,4 +58,18 @@
     &__name {
         letter-spacing: .01em;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 130px 0 0;
+
+            &__parts {
+                margin: 36px 0 0;
+            }
+            &__part {
+                padding: 57px 0 87px;
+            }
+        }
+    }
 }

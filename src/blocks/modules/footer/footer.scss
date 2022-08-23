@@ -60,4 +60,25 @@
             background-color: $color-footer-hover;
         }
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__inner {
+            padding: 67px 0;
+        }
+        &__logos {
+            margin: 23px 0 15px;
+        }
+        &__logo {
+            margin: 0 0 0 30px;
+            height: 120px;
+        }
+        &__right {
+            margin: 0 39px 0 auto;
+        }
+        &__str {
+            width: 167px;
+            height: 167px;
+        }
+    }
 }

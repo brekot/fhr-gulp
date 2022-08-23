@@ -104,4 +104,51 @@
         margin: 0 0 0 -550px;
         z-index: 2;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            margin: 325px 0 300px;
+
+            &__left {
+                width: calc(50% + 170px);
+            }
+            &__bg {
+                height: 488px;
+            }
+            &__glob {
+                right: -132px;
+                top: -310px;
+                width: 434px;
+            }
+            &__date {
+                top: -100px;
+            }
+            &__text {
+                max-width: 597px;
+                padding: 114px 60px 153px 0
+            }
+            &__score {
+                right: 70px;
+            }
+            &__img1 {
+                top: 200px;
+                right: -200px;
+                height: 738px;
+            }
+            &__piople {
+                top: 922px;
+                width: 230px;
+            }
+            &__img2 {
+                top: 1006px;
+                width: 215px;
+            }
+            &__img3 {
+                bottom: -262px;
+                margin: 0 0 0 -388px;
+                width: 900px;
+            }
+        }
+    }
 }

@@ -66,4 +66,44 @@
         right: 0;
         z-index: 2;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 200px 0 100px;
+
+            &__date {
+                margin: 0 0 0 40px;
+            }
+            &__block {
+                padding: 330px 35px 0 364px;
+            }
+            &__text {
+                margin: 0 0 40px;
+            }
+            &__score {
+                right: 32px;
+            }
+            &__img1 {
+                top: 172px;
+                left: -43px;
+                width: 360px;
+            }
+            &__img2 {
+                left: 140px;
+                top: 575px;
+                width: 160px;
+            }
+            &__img3 {
+                top: -48px;
+                right: 221px;
+                width: 296px;
+            }
+            &__img4 {
+                top: 50px;
+                right: 33px;
+                width: 300px;
+            }
+        }
+    }
 }

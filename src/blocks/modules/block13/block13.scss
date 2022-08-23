@@ -51,4 +51,27 @@
         bottom: 25px;
         right: 5px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        &__inner {
+            margin: 90px 38px 140px 363px;
+        }
+        &__img {
+            left: -442px;
+            top: 75px;
+            height: 260px;
+        }
+        &__date {
+            top: -203px;
+            left: -170px;
+        }
+        &__title {
+            margin: 0 0 20px;
+        }
+        &__score {
+            bottom: 36px;
+            right: 0;
+        }
+    }
 }

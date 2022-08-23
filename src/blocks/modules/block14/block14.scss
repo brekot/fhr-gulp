@@ -39,4 +39,27 @@
         bottom: -108px;
         right: 55px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            margin: 0 0 165px;
+
+            &__inner {
+                padding: 155px 35px 115px;
+            }
+            &__text {
+                max-width: 520px;
+            }
+            &__img1 {
+                right: 45px;
+                top: 410px;
+                width: 270px;
+            }
+            &__img2 {
+                bottom: -75px;
+                width: 240px;
+            }
+        }
+    }
 }

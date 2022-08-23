@@ -44,4 +44,27 @@
         top: -170px;
         right: 140px;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            background-size: auto 550px;
+
+            &__inner {
+                padding: 34px 0 0 38px;
+            }
+            &__text {
+                max-width: 530px;
+                padding: 90px 0 30px;
+            }
+            &__score {
+                margin: 0 0 0 96px;
+            }
+            &__img {
+                top: -163px;
+                right: 56px;
+                width: 304px;
+            }
+        }
+    }
 }

@@ -49,4 +49,33 @@
         max-width: 730px;
         color: $color-yellow;
     }
+
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            margin: 0 0 63px;
+
+            &__bg {
+                padding: 47px 0 16px;
+            }
+            &__inner {
+                max-width: 640px;
+            }
+            &__desc {
+                max-width: 1000px;
+                margin: 0 -85px 40px 0;
+            }
+            &__items {
+                margin: 0 -110px 0 0;
+            }
+            &__item {
+                border-width: 2px;
+                padding: 25px 0;
+            }
+            &__last {
+                padding: 48px 0 0;
+                max-width: 620px;
+            }
+        }
+    }
 }
