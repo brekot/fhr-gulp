@@ -1,0 +1,103 @@
+.block20 {
+
+    &__block {
+        margin: 35px 0 0;
+        text-align: center;
+        padding: 50px 0;
+        position: relative;
+
+        &:after {
+            content: "";
+            opacity: .6;
+            filter: blur(170px);
+            position: absolute;
+            z-index: 1;
+            height: 356px;
+            width: 356px;
+            border-radius: 50%;
+        }
+
+        &_red {
+            color: $color-red;
+            border-top: 1px solid $color-red;
+            border-bottom: 1px solid $color-red;
+
+            &:after {
+                background: $color-red;
+                left: 50%;
+                top: 60px;
+            }
+        }
+        &_blue {
+            color: $color-blue;
+            border-top: 1px solid $color-blue;
+            border-bottom: 1px solid $color-blue;
+
+            &:after {
+                background: $color-blue;
+                right: 55%;
+                top: 0;
+            }
+        }
+    }
+    &__title {
+        font-size: 33px;
+        text-align: center;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        margin: 18px 0 25px;
+    }
+    &__link {
+        letter-spacing: .02em;
+        color: $color-red;
+        position: relative;
+        z-index: 2;
+
+        &:hover {
+            color: $color-red-hover;
+        }
+    }
+    &__str {
+        border-top: 2px solid $color-blue;
+        border-right: 2px solid $color-blue;
+        display: inline-flex;
+        height: 122px;
+        width: 122px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-color: $color-blue;
+            height: 140%;
+            position: absolute;
+            width: 2px;
+            transform: rotate(45deg);
+            right: 58px;
+            top: -25px;
+        }
+    }
+}
+
+.share-block-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 8px;
+    position: relative;
+    z-index: 2;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15px;
+        fill: $color-blue;
+
+        &:hover {
+            fill: $color-blue-hover;
+        }
+    }
+    &__icon {
+        height: 37px;
+        width: 37px;
+    }
+}
