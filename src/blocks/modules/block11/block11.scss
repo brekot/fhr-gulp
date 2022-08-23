@@ -12,11 +12,15 @@
         position: relative;
     }
     &__bg {
-        background: url(../img/block11/bg.png) no-repeat center / cover;
+        background: url(../img/block11/bg.webp) no-repeat center / cover;
         height: 690px;
         position: relative;
         width: calc(100% + 4px);
         margin: -2px -2px 0;
+
+        .not-use-webp &__bg {
+            background-image: url(../img/block11/bg.png);
+        }
 
         &:after {
             content: '';

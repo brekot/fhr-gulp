@@ -1,5 +1,9 @@
 .block7 {
-    background: url(../img/block7/bg.png) no-repeat center / cover;
+    background: url(../img/block7/bg.webp) no-repeat center / cover;
+
+    .not-use-webp & {
+        background-image: url(../img/block7/bg.png);
+    }
 
     &__inner {
         position: relative;

@@ -12,13 +12,16 @@
         z-index: 2;
     }
     &__bg {
-        background-image: url(../img/block5/bg.png);
+        background-image: url(../img/block5/bg.webp);
         height: 1020px;
         background-repeat: no-repeat;
         background-size: cover;
         mix-blend-mode: soft-light;
         position: relative;
         z-index: 1;
+    }
+    .not-use-webp &__bg {
+        background-image: url(../img/block5/bg.png);
     }
     &__glob {
         position: absolute;

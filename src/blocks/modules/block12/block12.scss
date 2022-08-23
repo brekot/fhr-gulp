@@ -13,8 +13,12 @@
         right: 0;
     }
     &__bg {
-        background: url(../img/block12/bg.png) no-repeat center / cover;
+        background: url(../img/block12/bg.webp) no-repeat center / cover;
         height: 100%;
         mix-blend-mode: screen;
+    }
+
+    .not-use-webp &__bg {
+        background-image: url(../img/block12/bg.png);
     }
 }

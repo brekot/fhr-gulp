@@ -1,8 +1,12 @@
 .block8 {
-    background: url(../img/block8/bg.png) no-repeat center / cover;
+    background: url(../img/block8/bg.webp) no-repeat center / cover;
     height: 704px;
     margin: 233px 0 0;
     position: relative;
+
+    .not-use-webp & {
+        background-image: url(../img/block8/bg.png);
+    }
 
     &__img {
         position: absolute;

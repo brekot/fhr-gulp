@@ -1,0 +1,54 @@
+.block13 {
+
+    &__inner {
+        position: relative;
+        margin: -55px 0 188px 452px;
+        z-index: 2;
+    }
+    &__img {
+        max-width: 528px;
+        position: absolute;
+        left: -587px;
+        top: 95px;
+    }
+    &__date {
+        position: absolute;
+        top: -152px;
+        left: -172px;
+
+        &-title {
+            margin: -18px 0 0 172px;
+        }
+    }
+    &__text {
+        color: $color-gray;
+        letter-spacing: .01em;
+        margin: 0 0 43px;
+    }
+    &__title {
+        font-size: 47px;
+        line-height: 1;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: $color-yellow;
+        margin: 0 0 37px;
+    }
+    &__video {
+        position: relative;
+        display: inline-block;
+
+        &-img {
+            display: block;
+        }
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            right: -80px;
+        }
+    }
+    &__score {
+        position: absolute;
+        bottom: 25px;
+        right: 5px;
+    }
+}

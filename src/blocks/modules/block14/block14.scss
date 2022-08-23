@@ -1,0 +1,42 @@
+.block14 {
+    background: url(../img/block14/bg.webp) no-repeat center / cover;
+    margin: 0 0 250px;
+
+    .not-use-webp & {
+        background-image: url(../img/block14/bg.png);
+    }
+
+    &__inner {
+        position: relative;
+        padding: 165px 0 120px;
+    }
+    &__text {
+        margin: 114px 0 46px;
+        letter-spacing: .01em;
+        color: $color-white;
+        max-width: 720px;
+        position: relative;
+    }
+    &__title {
+        font-size: 47px;
+        line-height: 1;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+    &__score {
+        position: absolute;
+        right: 5px;
+        bottom: -183px;
+    }
+    &__img1 {
+        position: absolute;
+        right: 20px;
+        top: 245px;
+    }
+    &__img2 {
+        position: absolute;
+        bottom: -108px;
+        right: 55px;
+    }
+}
