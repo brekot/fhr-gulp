@@ -53,4 +53,21 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            padding: 80px 10px 123px;
+
+            &__img {
+                top: -170px;
+                margin: 0 0 0 -73px;
+                height: 226px;
+            }
+            &__text {
+                font-size: 14px;
+                line-height: 29px;
+                letter-spacing: .02em;
+            }
+        }
+    }
 }

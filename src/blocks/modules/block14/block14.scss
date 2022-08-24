@@ -26,8 +26,9 @@
     }
     &__score {
         position: absolute;
-        right: 5px;
-        bottom: -183px;
+        bottom: 33px;
+        right: 50%;
+        margin: 0 -125px 0 0;
     }
     &__img1 {
         position: absolute;
@@ -76,7 +77,44 @@
         }
         &__score {
             right: 0;
-            bottom: -140px;
+            bottom: 35px;
+            margin: 0;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            background-size: auto 375px;
+            background-position: center top;
+            margin: 0 0 105px;
+
+            &__inner {
+                padding: 230px 15px 0;
+            }
+            &__text {
+                margin: 130px 0 30px;
+            }
+            &__title {
+                font-size: 32px;
+            }
+            &__img1 {
+                position: static;
+                margin: 0 0 0 105px;
+                width: 195px;
+                display: block;
+            }
+            &__img2 {
+                position: static;
+                width: 130px;
+                margin: -85px 0 54px 25px;
+                display: block;
+            }
+            &__score {
+                right: 18px;
+                bottom: -33px;
+                height: 86px;
+                margin: 0;
+            }
         }
     }
 }

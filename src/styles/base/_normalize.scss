@@ -14,18 +14,21 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block;
 }
 
+.wrapper {
+	width: 100%;
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0;
 	font: 400 18px/1.6 'Open Sans', sans-serif;
 	color: $color-white;
 	text-align: left;
 	background-color: $color-black;
-	width: 100%;
-	overflow-x: hidden;
 
 /* 	background-image: url(../img/tmp.png);
 	background-repeat: no-repeat;
-	background-position: center 11805px; */
+	background-position: center 12013px; */
 }
 
 @include media-breakpoint-only(xs)

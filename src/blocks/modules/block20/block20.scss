@@ -42,7 +42,6 @@
     }
     &__title {
         font-size: 33px;
-        text-align: center;
         letter-spacing: .3em;
         text-transform: uppercase;
         margin: 18px 0 25px;
@@ -99,6 +98,32 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        &__block {
+            margin: 20px 0 0;
+            padding: 50px 0 33px;
+        }
+        &__title {
+            margin: 23px auto 17px;
+            line-height: 1;
+            font-size: 25px;
+            max-width: 300px;
+        }
+        &__img {
+            height: 93px;
+        }
+        &__str {
+            height: 90px;
+            width: 90px;
+            margin: 24px 0 0;
+
+            &:before {
+                right: 41px;
+                top: -20px;
+            }
+        }
+    }
 }
 
 .share-block-links {
@@ -122,5 +147,16 @@
     &__icon {
         height: 37px;
         width: 37px;
+    }
+
+    @include media-breakpoint-only(xs)
+    {
+        &__link {
+            margin: 0 10px;
+        }
+        &__icon {
+            height: 27px;
+            width: 27px;
+        }
     }
 }

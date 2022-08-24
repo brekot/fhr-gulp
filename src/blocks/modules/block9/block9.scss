@@ -70,7 +70,7 @@
     @include media-breakpoint-between(sm, md)
     {
         & {
-            background: no-repeat;
+            background: none;
 
             &__img {
                 top: -100px;
@@ -81,6 +81,45 @@
                 bottom: 0;
                 left: auto;
                 right: 0;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            background: none;
+
+            &__img {
+                top: -85px;
+                right: -30px;
+                height: 200px;
+            }
+            &__inner {
+                padding: 110px 15px 0;
+            }
+            &__text {
+                padding: 80px 0 35px;
+            }
+            &__title {
+                font-size: 32px;
+                max-width: 150px;
+                line-height: 1;
+                margin: 0 0 12px;
+            }
+            &__video {
+
+                &-img {
+                    width: 210px;
+                }
+                &-btn {
+                    right: -100px;
+                }
+            }
+            &__score {
+                height: 80px;
+                bottom: -37px;
+                right: 30px;
+                left: auto;
             }
         }
     }

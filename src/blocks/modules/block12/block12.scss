@@ -34,4 +34,10 @@
             height: 460px;
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            height: 360px;
+        }
+    }
 }

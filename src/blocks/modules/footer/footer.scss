@@ -104,4 +104,34 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        &__inner {
+            padding: 48px 15px;
+            position: relative;
+        }
+        &__logos {
+            margin: 0 0 23px;
+        }
+        &__logo {
+            margin: 0 18px 0 0;
+            height: 80px;
+        }
+        &__str {
+            width: 98px;
+            height: 98px;
+            position: absolute;
+            right: 15px;
+            top: 40px;
+
+            &:after {
+                height: 50px;
+            }
+            &:before {
+                width: 39px;
+                height: 39px;
+                margin: -18px 0 0 -19px;
+            }
+        }
+    }
 }

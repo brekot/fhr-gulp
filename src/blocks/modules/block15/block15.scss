@@ -50,4 +50,17 @@
             }
         }
     }
+    @include media-breakpoint-only(xs)
+    {
+        & {
+            height: 375px;
+
+            &__img {
+                left: 50%;
+                margin: 0 0 0 -100px;
+                width: 200px;
+                bottom: -117px;
+            }
+        }
+    }
 }
