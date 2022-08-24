@@ -110,6 +110,10 @@
             background: none;
             padding: 0 0 270px;
 
+            .not-use-webp & {
+                background: none;
+            }
+
             &__inner {
                 margin: 140px 15px 0;
             }

@@ -89,6 +89,10 @@
         & {
             background: none;
 
+            .not-use-webp & {
+                background: none;
+            }
+
             &__img {
                 top: -85px;
                 right: -30px;
