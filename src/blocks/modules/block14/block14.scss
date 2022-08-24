@@ -62,4 +62,21 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__inner {
+            padding: 100px 0;
+        }
+        &__img1 {
+            display: none;
+        }
+        &__img2 {
+            right: 50%;
+            max-width: 200px;
+        }
+        &__score {
+            right: 0;
+            bottom: -140px;
+        }
+    }
 }

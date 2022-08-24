@@ -74,4 +74,23 @@
             right: 0;
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__date {
+            top: -160px;
+            left: 0;
+        }
+        &__inner {
+            margin: 0 0 100px;
+        }
+        &__img {
+            position: static;
+            display: block;
+            margin: 0 0 55px;
+            max-width: 100%;
+        }
+        &__score {
+            right: 0;
+        }
+    }
 }

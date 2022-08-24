@@ -28,4 +28,10 @@
             height: 570px;
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            height: 460px;
+        }
+    }
 }

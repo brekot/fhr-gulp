@@ -81,4 +81,27 @@
             height: 167px;
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__logos {
+            margin: 0 0 15px;
+        }
+        &__logo {
+            margin: 0 0 0 20px;
+            height: 80px;
+        }
+        &__str {
+            width: 98px;
+            height: 98px;
+
+            &:after {
+                height: 50px;
+            }
+            &:before {
+                width: 39px;
+                height: 39px;
+                margin: -18px 0 0 -19px;
+            }
+        }
+    }
 }

@@ -67,4 +67,21 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            background: no-repeat;
+
+            &__img {
+                top: -100px;
+                right: 50px;
+                height: 200px;
+            }
+            &__score {
+                bottom: 0;
+                left: auto;
+                right: 0;
+            }
+        }
+    }
 }

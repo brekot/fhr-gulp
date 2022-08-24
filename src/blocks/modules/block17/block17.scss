@@ -42,4 +42,15 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            padding: 100px 0 80px;
+
+            &__text {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+    }
 }

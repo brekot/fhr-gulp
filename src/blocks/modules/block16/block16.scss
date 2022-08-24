@@ -85,4 +85,23 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            background: none;
+            padding: 0 0 290px;
+
+            &__inner {
+                margin: 100px 0 0;
+            }
+            &__date {
+                left: 0;
+            }
+            &__img {
+                position: static;
+                display: block;
+                margin: 0 0 50px;
+            }
+        }
+    }
 }

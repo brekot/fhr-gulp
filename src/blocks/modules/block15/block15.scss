@@ -37,4 +37,17 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            height: 450px;
+
+            &__img {
+                left: 50%;
+                margin: 0;
+                width: 200px;
+                bottom: -100px;
+            }
+        }
+    }
 }

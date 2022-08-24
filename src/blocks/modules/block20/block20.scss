@@ -77,7 +77,7 @@
         }
     }
 
-    @include media-breakpoint-only(lg)
+    @include media-breakpoint-between(sm, lg)
     {
         &__block {
             margin: 42px 0 0;

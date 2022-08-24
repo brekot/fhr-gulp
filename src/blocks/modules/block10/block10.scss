@@ -106,4 +106,35 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            padding: 100px 0;
+
+            &__date {
+                margin: 0 0 100px;
+            }
+            &__img1 {
+                position: static;
+                margin: auto;
+                display: block;
+            }
+            &__img2 {
+                display: none;
+            }
+            &__img3 {
+                top: 650px;
+                right: 42%;
+                width: 250px;
+            }
+            &__img4 {
+                top: 700px;
+                left: 46%;
+                width: 250px;
+            }
+            &__block {
+                padding: 100px 0 0;
+            }
+        }
+    }
 }

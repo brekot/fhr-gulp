@@ -28,4 +28,16 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        & {
+            height: 500px;
+
+            &__img {
+                top: -60px;
+                margin: 0 0 0 -150px;
+                width: 300px;
+            }
+        }
+    }
 }

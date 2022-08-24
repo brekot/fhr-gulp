@@ -78,4 +78,24 @@
             }
         }
     }
+    @include media-breakpoint-between(sm, md)
+    {
+        &__items {
+            margin: 0;
+        }
+        &__item {
+            border-width: 2px;
+            padding: 20px 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__year {
+            font-size: 70px;
+            height: auto;
+            padding: 0;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
 }
