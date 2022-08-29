@@ -25,10 +25,6 @@ body {
 	color: $color-white;
 	text-align: left;
 	background-color: $color-black;
-
-/* 	background-image: url(../img/tmp.png);
-	background-repeat: no-repeat;
-	background-position: center 12013px; */
 }
 
 @include media-breakpoint-only(xs)
@@ -41,6 +37,10 @@ body {
 
 .bebas-neue {
 	font-family: 'BN';
+}
+
+.body-hide {
+	opacity: 0;
 }
 
 h1, h2, h3, h5, h6,
