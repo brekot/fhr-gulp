@@ -164,3 +164,14 @@ textarea {
 	overflow: auto;
 	resize: vertical;
 }
+
+.fancybox__content * {
+	outline: none !important;
+}
+
+@include media-breakpoint-up(sm)
+{
+	.d-sm-none {
+		display: none;
+	}
+}

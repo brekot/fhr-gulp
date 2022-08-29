@@ -1,6 +1,6 @@
 .block19 {
-    border-top: 1px solid $color-gray;
-    padding: 135px 0 0;
+/*     border-top: 1px solid $color-gray;*/
+    padding: 100px 0 0; 
 
     &__title {
         font-size: 47px;
@@ -65,7 +65,7 @@
     @include media-breakpoint-only(lg)
     {
         & {
-            padding: 130px 0 0;
+            /* padding: 130px 0 0; */
 
             &__parts {
                 margin: 36px 0 0;
@@ -78,7 +78,7 @@
     @include media-breakpoint-only(xs)
     {
         & {
-            padding: 105px 0 0;
+           /*  padding: 105px 0 0; */
 
             &__title {
                 font-size: 32px;

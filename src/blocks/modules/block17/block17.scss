@@ -35,11 +35,6 @@
             &__score {
                 right: -13px;
             }
-            &__img {
-                left: -440px;
-                top: 120px;
-                height: 332px;
-            }
         }
     }
     @include media-breakpoint-between(sm, md)
