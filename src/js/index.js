@@ -193,191 +193,64 @@ if (window.innerWidth > 991)
             .from(".block1__text", { scale: 0 }, "<");
 
         gsap.timeline({scrollTrigger: { trigger: ".block2", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 2 }})
-            .from(".block2__img", { y: 200 })
-        /*     .from(".block2__text", { y: 200 }) */
-            /* .to(".block2__img", { y: -100 }) */
-            /* .to(".block2__text", { y: -200 }) */;
+            .from(".block2__img", { y: 200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block3", start: "top 90%", end: "bottom 10%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block3__word", { x: -600 })
-            .from(".block3__year", { x: -600 })
-           /*  .from(".block3__text", { x: 600 }) */
-        /*     .to(".block3__word", { x: -300 })
-            .to(".block3__year", { x: -600 }) */
-            /* .to(".block3__text", { x: 600 }) */;
+            .from(".block3__year", { x: -600 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block4", start: "top 90%", end: "bottom 10%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-       /*      .from(".block4__text", { x: -600 }) */
-            .from(".block4__img", { scale: 0 })
-        /*     .to(".block4__text", { x: -600 }) */
-       /*      .to(".block4__img", { scale: 0 }); */
+            .from(".block4__img", { scale: 0 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block5", start: "top 60%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block5__glob", { scale: .7 })
             .from(".block5__img1", { x: -200 })
-            .from(".block5__img2", { x: 200, delay: .2 }, "<")
-   /*          .to(".block5__glob", { scale: 0 })
-            .to(".block5__img1", { x: -200 })
-            .to(".block5__img2", { x: 200, delay: .2 }, "<"); */
+            .from(".block5__img2", { x: 200, delay: .2 }, "<");
 
         gsap.timeline({scrollTrigger: { trigger: ".block6", start: "top 100%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-           /*  .from(".block6__date", { y: 200 }) */
-            .from(".block6__img", { x: -200 })
-           /*  .from(".block6__text", { x: 200 }) */
-        /*     .from(".block6__video", { y: 200 }) */
-           /*  .from(".block6__score", { y: 200 }) */
-        /*     .to(".block6__date", { y: -200 })
-            .to(".block6__img", { x: -200 }) */
-        /*     .to(".block6__text", { x: 200 }) */
-         /*    .to(".block6__video", { y: -200 })
-            .to(".block6__score", { y: -200 }); */
-
+            .from(".block6__img", { x: -200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", pin: ".block7__bg", pinSpacing: false, scrub: true }});
 
-        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", scrub: true }})
-         .to(".block7__bg", { y: '-50%' })
-    /*    .from(".block7__inner", { y: '50%' })
-        .to(".block7__inner", { y: '-50%' }) */
-            /* .from(".block7__date", { y: 200 }) */
-         /*    .from(".block7__text", { x: -200 }) */
-           /*  .from(".block7__img1", { y: -200 })
-            .from(".block7__img2", { y: 200 }, "<")  */
-          /*   .from(".block7__btn", { y: 200 }) */
-          /*   .from(".block7__score", { y: 200 }) */
-    /*         .to(".block7__date", { y: -200 }) */
-       /*      .to(".block7__text", { x: -200 }) */
-        /*     .to(".block7__img1", { y: -200 })
-            .to(".block7__img2", { y: -200 }, "<")
-            .to(".block7__btn", { y: -200 })
-            .to(".block7__score", { y: -200 }); */
+        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top center", end: "bottom -233px", scrub: true }})
+            .to(".block7__bg", { y: '-25%' })
+            .to(".block7__inner", { y: '-25%' })
+            .to(".block7__inner", { y: '-50%' })
+            .to(".block7__bg", { y: '-50%' });
 
         gsap.timeline({scrollTrigger: { trigger: ".block8", start: "top 100%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block8__img", { y: 200 })
-         /*    .to(".block8__img", { y: -200 }); */
+            .from(".block8__img", { y: 200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block9", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-           /*  .from(".block9__date", { y: 200 }) */
-       /*      .from(".block9__text", { x: -200 }) */
-            .from(".block9__img", { scale: .7 })
-          /*   .from(".block9__video", { y: 200 }) */
-         /*    .from(".block9__score", { y: 200 }) */
-     /*        .to(".block9__date", { y: -200 }) */
-  /*           .to(".block9__text", { x: -200 }) */
-      /*       .to(".block9__img", { scale: 0 })
-            .to(".block9__video", { y: -200 })
-            .to(".block9__score", { y: -200 }); */
+            .from(".block9__img", { scale: .7 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block10", start: "top 60%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-      /*       .from(".block10__date", { y: 200 }) */
             .from(".block10__img3", { x: -200 })
             .from(".block10__img4", { x: 200 }, "<")
-     /*        .from(".block10__text", { x: 200 }) */
             .from(".block10__img1", { y: 200 })
-            .from(".block10__img2", { y: 200 }, "<")
-       /*      .from(".block10__video", { y: 200 }) */
-      /*       .from(".block10__score", { y: 200 }) */
-           /*  .to(".block10__date", { y: -200 })
-            .to(".block10__img3", { x: -200 })
-            .to(".block10__img4", { x: 200 }, "<") */
-      /*       .to(".block10__text", { x: 200 }) */
-         /*    .to(".block10__img1", { y: -200 })
-            .to(".block10__img2", { y: -200 }, "<")
-            .to(".block10__video", { y: -200 })
-            .to(".block10__score", { y: -200 }); */
+            .from(".block10__img2", { y: 200 }, "<");
 
         gsap.timeline({scrollTrigger: { trigger: ".block11", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block11__glob", { scale: .7 })
-            .from(".block11__img1", { x: 200/* , delay: 2 */ })
-   /*          .from(".block11__text", { y: 200, delay: 2 }) */
-           /*  .from(".block11__red", { y: -200, opacity: 1 }) */
-            /* .from(".block11__piople", { x: 200 }) */
+            .from(".block11__img1", { x: 200 })
             .from(".block11__img2", { x: 200 })
-          /*   .from(".block11__score", { y: 200 , delay: 2  }) */
-            .from(".block11__img3", { scale: .7 })
-        /*     .to(".block11__glob", { scale: 0 })
-            .to(".block11__img1", { x: 200 }) */
-/*             .to(".block11__text", { y: -200 }) */
-       /*      .to(".block11__piople", { x: 200 })
-            .to(".block11__img2", { x: 200 })
-            .to(".block11__score", { y: -200 })
-            .to(".block11__img3", { scale: 0 }); */
+            .from(".block11__img3", { scale: .7 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block13", start: "top 80%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-     /*        .from(".block13__date", { y: 200 }) */
-            .from(".block13__img", { x: -200 })
-     /*        .from(".block13__text", { x: 200 }) */
-          /*   .from(".block13__video", { y: 200 }) */
-           /*  .from(".block13__score", { y: 200 }) */
-          /*   .to(".block13__date", { y: -200 })
-            .to(".block13__img", { x: -200 }) */
-       /*      .to(".block13__text", { x: 200 }) */
-           /*  .to(".block13__video", { y: -200 })
-            .to(".block13__score", { y: -200 }); */
+            .from(".block13__img", { x: -200 });
 
-            gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", pin: ".block14__bg", pinSpacing: false, scrub: true }});
+        gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", pin: ".block14__bg", pinSpacing: false, scrub: true }});
 
-            gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", scrub: true }})
-                .to(".block14__bg", { y: '-50%' })
-
-     /*    gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top 70%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }}) */
-          /*   .from(".block14__date", { y: 200 }) */
-         /*    .from(".block14__img1", { x: 200 }) */
-     /*        .from(".block14__text", { x: -200 }) */
-         /*    .from(".block14__video", { y: 200 }) */
-            /* .from(".block14__score", { y: 200 }) */
-         /*    .from(".block14__img2", { y: 200 }) */
-    /*         .to(".block14__date", { y: -200 })
-            .to(".block14__img1", { x: 200 }) */
-       /*      .to(".block14__text", { x: -200 }) */
-      /*       .to(".block14__video", { y: -200 })
-            .to(".block14__score", { y: -200 })
-            .to(".block14__img2", { y: -200 }); */
+        gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", scrub: true }})
+            .to(".block14__bg", { y: '-50%' })
 
         gsap.timeline({scrollTrigger: { trigger: ".block15", start: "top 40%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block15__img", { y: 200 })
-          /*   .to(".block15__img", { y: -200 }); */
+            .from(".block15__img", { y: 200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block16", start: "top 80%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-      /*       .from(".block16__date", { y: 200 }) */
-         /*    .from(".block16__text", { x: 200 }) */
-            .from(".block16__img", { x: -200 })
-      /*       .from(".block16__video", { y: 200 }) */
-            /* .from(".block16__score", { y: 200 }) */
-       /*      .to(".block16__date", { y: -200 }) */
-         /*    .to(".block16__text", { x: 200 }) */
-      /*       .to(".block16__img", { x: -200 })
-            .to(".block16__video", { y: -200 })
-            .to(".block16__score", { y: -200 }); */
+            .from(".block16__img", { x: -200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block17", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block17__img", { y: 200 })
-           /*  .from(".block17__text", { y: 200 }) */
-          /*   .to(".block17__img", { y: -100 }) */
-            /* .to(".block17__text", { y: -200 }) */;
-
-/*         gsap.timeline({scrollTrigger: { trigger: ".block18", start: "top 80%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block18__title", { x: -200 })
-            .from(".block18__desc", { x: -200 }) */
-            /* .from(".block18__items", { x: -200 })
-            .from(".block18__last", { x: -200, delay: 1 }) */
-         /*    .to(".block18__title", { x: 200 })
-            .to(".block18__desc", { x: 200 })
-            .to(".block18__items", { x: 200 })
-            .to(".block18__last", { x: 200 }); */
-
-/*         gsap.timeline({scrollTrigger: { trigger: ".block19", start: "top 70%", end: "bottom 20%", scrub: true }, defaults: { opacity: 0 }})
-            .from(".block19__title", { y: 200 })
-            .from(".block19__inner_left", { x: -200 })
-            .from(".block19__inner_right", { x: 200 }, "<")
-            .to(".block19__title", { y: -200 })
-            .to(".block19__inner_left", { x: -200 })
-            .to(".block19__inner_right", { x: 200 }, "<");
-
-        gsap.timeline({scrollTrigger: { trigger: ".block20", start: "top 70%", end: "bottom 0%", scrub: true }, defaults: { opacity: 0 }})
-            .from(".block20__inner_red", { scale: 0 })
-            .from(".block20__inner_blue", { scale: 0 })
-            .to(".block20__inner_red", { scale: 0 })
-            .to(".block20__inner_blue", { scale: 0 }); */
+            .from(".block17__img", { y: 200 });
     });
 }
