@@ -61,7 +61,7 @@ document.querySelector('.js-show-gallery').addEventListener('click', function() 
         },
         {
         src: "local/img/gallery/04.jpg",
-        caption: "Лидер сборной Канады Фил Эспозито. Помешать ему организовать очередную атаку пытается Евгений Мишаков, встретить грозного форварда готов Владимир Лутченко",
+        caption: "Лидер сборной Канады Фил Эспозито. Помешать ему организовать очередную атаку пытается Евгений Мишаков, встретить грозного форварда готов Александр Мартынюк",
         },
         {
         src: "local/img/gallery/05.jpg",
@@ -105,7 +105,7 @@ document.querySelector('.js-show-gallery').addEventListener('click', function() 
         },
         {
         src: "local/img/gallery/15.jpg",
-        caption: "Александра Мальцева встречают Пэт Стэплтон и Деннис Халл (№ 3)",
+        caption: "Александра Мальцева встречают Пэт Стэплтон (№ 3) и Деннис Халл",
         },
         {
         src: "local/img/gallery/16.jpg",
@@ -213,7 +213,7 @@ if (window.innerWidth > 991)
        /*      .to(".block4__img", { scale: 0 }); */
 
         gsap.timeline({scrollTrigger: { trigger: ".block5", start: "top 60%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block5__glob", { scale: 0 })
+            .from(".block5__glob", { scale: .7 })
             .from(".block5__img1", { x: -200 })
             .from(".block5__img2", { x: 200, delay: .2 }, "<")
    /*          .to(".block5__glob", { scale: 0 })
@@ -232,11 +232,17 @@ if (window.innerWidth > 991)
          /*    .to(".block6__video", { y: -200 })
             .to(".block6__score", { y: -200 }); */
 
-        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+
+        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", pin: ".block7__bg", pinSpacing: false, scrub: true }});
+
+        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", scrub: true }})
+         .to(".block7__bg", { y: '-50%' })
+    /*    .from(".block7__inner", { y: '50%' })
+        .to(".block7__inner", { y: '-50%' }) */
             /* .from(".block7__date", { y: 200 }) */
          /*    .from(".block7__text", { x: -200 }) */
-            .from(".block7__img1", { y: -200 })
-            .from(".block7__img2", { y: 200 }, "<")
+           /*  .from(".block7__img1", { y: -200 })
+            .from(".block7__img2", { y: 200 }, "<")  */
           /*   .from(".block7__btn", { y: 200 }) */
           /*   .from(".block7__score", { y: 200 }) */
     /*         .to(".block7__date", { y: -200 }) */
@@ -253,7 +259,7 @@ if (window.innerWidth > 991)
         gsap.timeline({scrollTrigger: { trigger: ".block9", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
            /*  .from(".block9__date", { y: 200 }) */
        /*      .from(".block9__text", { x: -200 }) */
-            .from(".block9__img", { scale: 0 })
+            .from(".block9__img", { scale: .7 })
           /*   .from(".block9__video", { y: 200 }) */
          /*    .from(".block9__score", { y: 200 }) */
      /*        .to(".block9__date", { y: -200 }) */
@@ -281,14 +287,14 @@ if (window.innerWidth > 991)
             .to(".block10__score", { y: -200 }); */
 
         gsap.timeline({scrollTrigger: { trigger: ".block11", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
-            .from(".block11__glob", { scale: 0 })
+            .from(".block11__glob", { scale: .7 })
             .from(".block11__img1", { x: 200/* , delay: 2 */ })
    /*          .from(".block11__text", { y: 200, delay: 2 }) */
            /*  .from(".block11__red", { y: -200, opacity: 1 }) */
             /* .from(".block11__piople", { x: 200 }) */
             .from(".block11__img2", { x: 200 })
           /*   .from(".block11__score", { y: 200 , delay: 2  }) */
-            .from(".block11__img3", { scale: 0 })
+            .from(".block11__img3", { scale: .7 })
         /*     .to(".block11__glob", { scale: 0 })
             .to(".block11__img1", { x: 200 }) */
 /*             .to(".block11__text", { y: -200 }) */
@@ -309,13 +315,18 @@ if (window.innerWidth > 991)
            /*  .to(".block13__video", { y: -200 })
             .to(".block13__score", { y: -200 }); */
 
-        gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top 70%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+            gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", pin: ".block14__bg", pinSpacing: false, scrub: true }});
+
+            gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", scrub: true }})
+                .to(".block14__bg", { y: '-50%' })
+
+     /*    gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top 70%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }}) */
           /*   .from(".block14__date", { y: 200 }) */
-            .from(".block14__img1", { x: 200/* , delay: 2 */ })
+         /*    .from(".block14__img1", { x: 200 }) */
      /*        .from(".block14__text", { x: -200 }) */
          /*    .from(".block14__video", { y: 200 }) */
             /* .from(".block14__score", { y: 200 }) */
-            .from(".block14__img2", { y: 200 })
+         /*    .from(".block14__img2", { y: 200 }) */
     /*         .to(".block14__date", { y: -200 })
             .to(".block14__img1", { x: 200 }) */
        /*      .to(".block14__text", { x: -200 }) */

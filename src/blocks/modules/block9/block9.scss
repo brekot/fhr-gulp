@@ -1,5 +1,6 @@
 .block9 {
-    background: url(../img/block9/bg.webp) no-repeat top right;
+    background: #262626 url(../img/block9/bg.webp) no-repeat top right;
+    position: relative;
 
     .not-use-webp & {
         background-image: url(../img/block9/bg.png);

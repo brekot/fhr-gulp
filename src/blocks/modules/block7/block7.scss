@@ -1,13 +1,23 @@
 .block7 {
-    background: url(../img/block7/bg.webp) no-repeat center / cover;
+    position: relative;
 
-    .not-use-webp & {
+    &__bg {
+        background: url(../img/block7/bg.webp) no-repeat center / cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .not-use-webp &__bg {
         background-image: url(../img/block7/bg.png);
     }
 
     &__inner {
         position: relative;
         padding: 117px 0 125px;
+        z-index: 2;
     }
     &__text {
         padding: 88px 0 40px;
