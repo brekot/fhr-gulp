@@ -212,11 +212,8 @@ if (window.innerWidth > 991)
 
         gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", pin: ".block7__bg", pinSpacing: false, scrub: true }});
 
-        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top center", end: "bottom -233px", scrub: true }})
-            .to(".block7__bg", { y: '-25%' })
-            .to(".block7__inner", { y: '-25%' })
-            .to(".block7__inner", { y: '-50%' })
-            .to(".block7__bg", { y: '-50%' });
+        gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", scrub: true }})
+            .to(".block7__bg", { y: '-50%' })
 
         gsap.timeline({scrollTrigger: { trigger: ".block8", start: "top 100%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block8__img", { y: 200 });
