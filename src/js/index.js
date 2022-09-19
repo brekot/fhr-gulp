@@ -1,8 +1,8 @@
 import { Fancybox } from "@fancyapps/ui";
-import { gsap } from "gsap";
+/* import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger); */
 
 // Проверка возможности использования webp
 function canUseWebp()
@@ -41,7 +41,6 @@ document.getElementById('to-top').addEventListener('click', function() {
 
 	window.scrollTo({top: 0, behavior: 'smooth'});
 });
-
 
 // Галерея
 document.querySelector('.js-show-gallery').addEventListener('click', function() {
@@ -175,7 +174,7 @@ document.querySelector('.js-show-gallery').addEventListener('click', function() 
 });
 
 // Анимация
-if (window.innerWidth > 991)
+/* if (window.innerWidth > 991)
 {
     document.body.classList.add('body-hide');
 
@@ -192,22 +191,22 @@ if (window.innerWidth > 991)
             .from(".header__logo", { duration: 2  }, "-=1")
             .from(".block1__text", { scale: 0 }, "<");
 
-        gsap.timeline({scrollTrigger: { trigger: ".block2", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 2 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block2", start: "top 90%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 2 }})
             .from(".block2__img", { y: 200 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block3", start: "top 90%", end: "bottom 10%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block3", start: "top 90%", end: "bottom 10%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block3__word", { x: -600 })
             .from(".block3__year", { x: -600 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block4", start: "top 90%", end: "bottom 10%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block4", start: "top 90%", end: "bottom 10%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block4__img", { scale: 0 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block5", start: "top 60%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block5", start: "top 60%", end: "bottom 0%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block5__glob", { scale: .7 })
             .from(".block5__img1", { x: -200 })
             .from(".block5__img2", { x: 200, delay: .2 }, "<");
 
-        gsap.timeline({scrollTrigger: { trigger: ".block6", start: "top 100%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block6", start: "top 100%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block6__img", { x: -200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", pin: ".block7__bg", pinSpacing: false, scrub: true }});
@@ -215,25 +214,25 @@ if (window.innerWidth > 991)
         gsap.timeline({scrollTrigger: { trigger: ".block7", start: "top top", end: "bottom -233px", scrub: true }})
             .to(".block7__bg", { y: '-50%' })
 
-        gsap.timeline({scrollTrigger: { trigger: ".block8", start: "top 100%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block8", start: "top 100%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block8__img", { y: 200 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block9", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block9", start: "top 90%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block9__img", { scale: .7 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block10", start: "top 60%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block10", start: "top 60%", end: "bottom 0%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block10__img3", { x: -200 })
             .from(".block10__img4", { x: 200 }, "<")
             .from(".block10__img1", { y: 200 })
             .from(".block10__img2", { y: 200 }, "<");
 
-        gsap.timeline({scrollTrigger: { trigger: ".block11", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block11", start: "top 90%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block11__glob", { scale: .7 })
             .from(".block11__img1", { x: 200 })
             .from(".block11__img2", { x: 200 })
             .from(".block11__img3", { scale: .7 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block13", start: "top 80%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block13", start: "top 80%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block13__img", { x: -200 });
 
         gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", pin: ".block14__bg", pinSpacing: false, scrub: true }});
@@ -241,13 +240,13 @@ if (window.innerWidth > 991)
         gsap.timeline({scrollTrigger: { trigger: ".block14", start: "top top", end: "bottom -233px", scrub: true }})
             .to(".block14__bg", { y: '-50%' })
 
-        gsap.timeline({scrollTrigger: { trigger: ".block15", start: "top 40%", end: "bottom 0%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block15", start: "top 40%", end: "bottom 0%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block15__img", { y: 200 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block16", start: "top 80%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block16", start: "top 80%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block16__img", { x: -200 });
 
-        gsap.timeline({scrollTrigger: { trigger: ".block17", start: "top 90%", end: "bottom 20%"/*, scrub: true*/ }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
+        gsap.timeline({scrollTrigger: { trigger: ".block17", start: "top 90%", end: "bottom 20%" }, defaults: { opacity: 0, ease: "power3.inOut", duration: 1.5 }})
             .from(".block17__img", { y: 200 });
     });
-}
+} */
